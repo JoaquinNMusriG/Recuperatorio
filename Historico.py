@@ -28,6 +28,6 @@ class Historico:
 
     def __gt__(self, otro):
         resultado = False
-        if (self.gettempMax() > otro.gettempMax()) & (self.gettempMin() > otro.gettempMin()):
+        if (self.__tempMaxima > otro.__tempMaxima) & (self.__tempMinima > otro.__tempMinima):
             resultado = True
         return resultado
